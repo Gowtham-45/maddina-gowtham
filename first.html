@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet"   href="style.css">
+
+<script type="text/javascript">
+function validate()
+{ 
+	  if( document.myform.company.value == "-1" ) {
+            alert( "Please provide your company" );
+            return false;
+         }
+         return( true );
+      }	
+}
+</script>
+</head>
+
+<body>
+<div class="row">
+	<div class="col">
+	<div class="container">
+	<span class="text">welocme to </span>
+	<span class="text1">shore modling </spam>
+	</div>
+
+<div class="details">
+<fieldset style="position: fixed;  bottom:0; text-align:bottom; width:45.7%">
+	<legend>contat us:</legend>
+	phone no:020-142567;<br/>
+	mail:shore.modling:gmail.com;<br/>
+	location:hitech gate,hyderabad,516104 <br/>
+</fieldset>
+</div>
+
+	<form action = "post" name = "myform" onsubmit = "return(validate()); ">
+               	  
+	</div>
+	<div class="col" >
+ 	<div class="right">
+	
+	<div class="tables">
+	
+	<table cellspacing = "2" cellpadding = "2" >
+
+            
+            <tr>
+	
+	<td> select company name : </td>
+	<td> <select name="company" required >
+	<option value="-1">select </option>
+	<option value="1">company-1 </option>
+	<option value="2">company-2</option>
+	</select>
+</td>
+	</tr>
+	
+	<tr> 
+	<td> Select the model: </td>
+	<td><input type="checkbox" id="ahaladh" >ahaladh </checkbox> </td>
+	<td> <input type="checkbox" id="gowtham" > gowtham </checkbox> </td>
+	</tr>
+
+	<tr>
+	<td ><input type="checkbox" id="sandeep" >sandeep </checkbox></td>
+	<td ><input type="checkbox" id="kumar" >kumar</checkbox></td>
+	<td ><input type="checkbox" id="ashis" > ashis </checkbox> </td>
+	</tr>
+
+	<tr>
+	<td><input type="checkbox" id="nivitha" >nivitha thomas </checkbox></td>
+
+	<td ><input type="checkbox" id="smithi" > smithi </checkbox> </td>
+	<td ><input type="checkbox" id="sai" > sai </checkbox> </td>
+	</tr>
+
+	<tr>
+	<td>Select date :</td>
+	<td> <input type="date" id="date" style="width:165px" required/></td>
+	</tr>
+	
+	<tr>
+	<td> Select time : </td>
+	<td> <input type="time" id="time"  required /></td>
+	</tr>
+
+	<tr >
+	<td colspan="2" align="center"><input type="button" id="btn" value="Submit" " /> </td>
+	</tr>
+
+ 	</form>
+	</table>
+	
+
+	</div>
+	</div>
+
+
+</div>
+</body>
+
+
+</html>
